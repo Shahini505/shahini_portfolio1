@@ -526,13 +526,20 @@ section {
 .tags-container, .tech-stack-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
+  gap: 1.4rem;
 }
 .glass-tag, .skill-tag {
-  font-size: 1.3rem; padding: 0.5rem 1.5rem; background: rgba(128,128,128,0.05);
-  border: 1px solid var(--glass-border); border-radius: 20px; color: var(--text-color); transition: 0.3s;
+  font-size: 1.4rem; padding: 0.8rem 2rem; background: rgba(255,255,255,0.03);
+  border: 1px solid var(--glass-border); border-radius: 30px; color: var(--text-color); transition: all 0.4s ease;
+  cursor: none;
 }
-.glass-tag:hover { background: var(--glow-gradient); border-color: transparent; color: #fff; transform: translateY(-2px); }
+.glass-tag:hover, .skill-tag:hover { 
+  background: var(--main-color); 
+  border-color: var(--main-color); 
+  color: #ffffff; 
+  transform: translateY(-4px); 
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
 
 /* --- Projects (3D Cards) --- */
 .project-card { display: flex; flex-direction: column; overflow: hidden; padding: 0; border-radius: 24px; transform-style: preserve-3d; transition: transform 0.1s; cursor: none; }
