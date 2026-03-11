@@ -349,7 +349,7 @@ function initEffects() {
 
     // --- Typing Effect (Hero Subtitle) ---
     const textElement = document.querySelector('.multiple-text');
-    const words = ['Data Scientist', 'Machine Learning Enthusiast', 'Python Developer'];
+    const words = ['Data Scientist', 'Machine Learning Enthusiast', 'Aspiring Data Scientist & AI Enthusiast'];
     let wordIndex = 0; 
     let charIndex = 0; 
     let isDeleting = false;
