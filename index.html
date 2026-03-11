@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahini Bandaru | Premium Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Reset & Variables -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Shahini</a>
+        <div class="theme-toggle">
+            <i class="fas fa-moon" id="theme-btn"></i>
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+        </div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#terminal-section">Terminal</a><a href="#education">Education</a>
+            <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <section class="home" id="home">
+        <div id="particles-js"></div>
+        <div class="home-content z-index-1">
+            <h3 class="anim-slide-up delay-1">Hello, It's Me</h3>
+            <h1 class="gradient-text anim-slide-up delay-2 text-glow">Shahini Bandaru</h1>
+            <h3 class="anim-slide-up delay-3">And I'm a <span class="multiple-text">Data Scientist</span></h3>
+            <p class="anim-slide-up delay-4">Extracting meaningful insights from data and building intelligent AI-powered solutions using modern analytics tools and machine learning techniques.</p>
+            <div class="social-media anim-slide-up delay-5">
+                <a href="https://linkedin.com/in/shahini-bandaru" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Shahini505" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:shahinibandaru05@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="hero-buttons anim-slide-up delay-6">
+                <a href="#contact" class="btn btn-gradient shine">Get In Touch</a>
+                <a href="#projects" class="btn btn-outline neon-hover">View Projects</a>
+            </div>
+        </div>
+        <div class="home-img z-index-1 anim-zoom">
+            <div class="profile-glow-ring">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Shahini Bandaru">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-grid">
+            <div class="about-card glass hover-gradient-border float-anim">
+                <i class="fas fa-user icon-gradient p-icon"></i>
+                <h3>Who I Am</h3>
+                <p>I’m Shahini Bandaru, a passionate Data Science and AI enthusiast with a strong foundation in computer science and analytics.</p>
+            </div>
+            <div class="about-card glass hover-gradient-border float-anim delay-1">
+                <i class="fas fa-laptop-code icon-gradient p-icon"></i>
+                <h3>My Expertise</h3>
+                <p>I specialize in transforming raw data into actionable insights using Python, machine learning, and visualization tools like Power BI.</p>
+            </div>
+            <div class="about-card glass hover-gradient-border float-anim delay-2">
+                <i class="fas fa-route icon-gradient p-icon"></i>
+                <h3>My Journey</h3>
+                <p>Currently pursuing a B.Tech in Computer Science Engineering with a focus on Data Science and AI-based solutions.</p>
+            </div>
+            <div class="about-card glass hover-gradient-border float-anim delay-3">
+                <i class="fas fa-bullseye icon-gradient p-icon"></i>
+                <h3>My Mission</h3>
+                <p>My goal is to leverage technology and analytics to build data-driven applications that solve real-world problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="terminal-container" id="terminal-section">
+        <h2 class="heading">Command <span>Line</span></h2>
+        <div class="terminal-window float-anim glass">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="close"></span>
+                    <span class="minimize"></span>
+                    <span class="maximize"></span>
+                </div>
+                <div class="terminal-title">shahini@portfolio: ~</div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <div class="terminal-line"><span class="prompt">shahini@portfolio:~$</span> Welcome to Shahini's Developer Terminal.</div>
+                <div class="terminal-line">Type <span class="highlight">help</span> to see a list of available commands.</div>
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt">shahini@portfolio:~$</span>
+                <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" autofocus>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Education & <span>Experience</span></h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-dot pulse-glow"></div>
+                <div class="timeline-content glass hover-gradient-border float-up">
+                    <div class="timeline-badge bg-gradient">Aug 2023 – Present</div>
+                    <h3>Bachelor of Technology – Computer Science and Engineering</h3>
+                    <h4>Lovely Professional University</h4>
+                    <p class="score gradient-text">CGPA: 8.6</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot pulse-glow"></div>
+                <div class="timeline-content glass hover-gradient-border float-up delay-1">
+                    <div class="timeline-badge bg-gradient">Jun 2025 – Jul 2025</div>
+                    <h3>Summer Bootcamp – DSA from Basics to Brilliance</h3>
+                    <h4>Lovely Professional University (Training)</h4>
+                    <ul>
+                        <li>Implemented core data structures such as arrays, stacks, and linked lists.</li>
+                        <li>Practiced algorithm optimization and time complexity analysis.</li>
+                        <li>Applied object-oriented programming concepts using Java.</li>
+                    </ul>
+                    <div class="tech-stack-tags"><span class="glass-tag">Java</span><span class="glass-tag">OOP</span><span class="glass-tag">Java Collections</span><span class="glass-tag">ArrayList</span></div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot pulse-glow"></div>
+                <div class="timeline-content glass hover-gradient-border float-up">
+                    <div class="timeline-badge bg-gradient">Apr 2021 – May 2023</div>
+                    <h3>Intermediate</h3>
+                    <h4>Vedantha Junior College</h4>
+                    <p class="score gradient-text">Percentage: 98%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot pulse-glow"></div>
+                <div class="timeline-content glass hover-gradient-border float-up delay-1">
+                    <div class="timeline-badge bg-gradient">Apr 2020 – Mar 2021</div>
+                    <h3>Matriculation</h3>
+                    <h4>Kavirayani Public School</h4>
+                    <p class="score gradient-text">Percentage: 92%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container wrapper">
+            <div class="skill-category glass hover-gradient-border float-anim">
+                <h3 class="skill-title"><i class="fas fa-code icon-gradient"></i> Programming</h3>
+                <div class="skill-box"><div class="skill-info"><span>Python</span><span class="pct">90%</span></div><div class="skill-bar"><span class="bg-gradient progress shine-bar" data-width="90%"></span></div></div>
+                <div class="skill-box"><div class="skill-info"><span>SQL</span><span class="pct">85%</span></div><div class="skill-bar"><span class="bg-gradient progress shine-bar" data-width="85%"></span></div></div>
+                <div class="skill-box"><div class="skill-info"><span>C++</span><span class="pct">80%</span></div><div class="skill-bar"><span class="bg-gradient progress shine-bar" data-width="80%"></span></div></div>
+                <div class="skill-box"><div class="skill-info"><span>Java & C</span><span class="pct">75%</span></div><div class="skill-bar"><span class="bg-gradient progress shine-bar" data-width="75%"></span></div></div>
+            </div>
+            <div class="skill-category glass hover-gradient-border float-anim delay-1">
+                <h3 class="skill-title"><i class="fas fa-layer-group icon-gradient"></i> Libraries</h3>
+                <div class="skill-box"><div class="skill-info"><span>Pandas & NumPy</span><span class="pct">88%</span></div><div class="skill-bar"><span class="bg-gradient progress shine-bar" data-width="88%"></span></div></div>
+                <div class="skill-box"><div class="skill-info"><span>Matplotlib & Seaborn</span><span class="pct">85%</span></div><div class="skill-bar"><span class="bg-gradient progress shine-bar" data-width="85%"></span></div></div>
+            </div>
+            <div class="skill-category glass hover-gradient-border float-anim delay-2">
+                <h3 class="skill-title"><i class="fas fa-tools icon-gradient"></i> Tools</h3>
+                <div class="skill-box"><div class="skill-info"><span>Power BI</span><span class="pct">90%</span></div><div class="skill-bar"><span class="bg-gradient progress shine-bar" data-width="90%"></span></div></div>
+                <div class="skill-box"><div class="skill-info"><span>MySQL</span><span class="pct">85%</span></div><div class="skill-bar"><span class="bg-gradient progress shine-bar" data-width="85%"></span></div></div>
+                <div class="skill-box"><div class="skill-info"><span>GitHub & Jupyter</span><span class="pct">80%</span></div><div class="skill-bar"><span class="bg-gradient progress shine-bar" data-width="80%"></span></div></div>
+                <div class="skill-box"><div class="skill-info"><span>Excel</span><span class="pct">85%</span></div><div class="skill-bar"><span class="bg-gradient progress shine-bar" data-width="85%"></span></div></div>
+            </div>
+            <div class="skill-category glass hover-gradient-border float-anim delay-3">
+                <h3 class="skill-title"><i class="fas fa-brain icon-gradient"></i> Concepts</h3>
+                <div class="tags-container mb-2">
+                    <span class="skill-tag hover-bg">Data Cleaning</span><span class="skill-tag hover-bg">EDA</span><span class="skill-tag hover-bg">Data Vis</span><span class="skill-tag hover-bg">Data Modeling</span><span class="skill-tag hover-bg">ML Basics</span>
+                </div>
+                <h3 class="skill-title mt-4"><i class="fas fa-users icon-gradient"></i> Soft Skills</h3>
+                <div class="tags-container">
+                    <span class="skill-tag hover-bg">Communication</span><span class="skill-tag hover-bg">Problem Solving</span><span class="skill-tag hover-bg">Adaptability</span><span class="skill-tag hover-bg">Consistency</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card glass float-up-hover">
+                <div class="project-img-container">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Hospital Dash">
+                </div>
+                <div class="project-content">
+                    <h3>Hospital Patient Flow Dashboard</h3>
+                    <p>Power BI dashboard analyzing hospital patient flow and departmental efficiency. Improved operational visibility by 35-40%.</p>
+                    <div class="tech-stack-tags mb-3"><span class="glass-tag">Power BI</span><span class="glass-tag">DAX</span><span class="glass-tag">Power Query</span></div>
+                    <div class="p-links">
+                        <a href="https://github.com/Shahini505" target="_blank" class="btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn-sm btn-gradient-soft"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass float-up-hover">
+                <div class="project-img-container">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80" alt="IMDB EDA">
+                </div>
+                <div class="project-content">
+                    <h3>IMDB Movie Data Analysis</h3>
+                    <p>Explored movie ratings, revenue, popularity, and genre patterns. Used statistical summaries, heatmaps, and visualizations.</p>
+                    <div class="tech-stack-tags mb-3"><span class="glass-tag">Python</span><span class="glass-tag">Pandas</span><span class="glass-tag">Seaborn</span><span class="glass-tag">Matplotlib</span></div>
+                    <div class="p-links">
+                        <a href="https://github.com/Shahini505" target="_blank" class="btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn-sm btn-gradient-soft"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass float-up-hover">
+                <div class="project-img-container">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80" alt="AI Generator">
+                </div>
+                <div class="project-content">
+                    <h3>AI Cover Letter Generator</h3>
+                    <p>AI web application generating personalized cover letters using Gemini Flash API, styled with premium web aesthetics.</p>
+                    <div class="tech-stack-tags mb-3"><span class="glass-tag">HTML/CSS/JS</span><span class="glass-tag">Gemini API</span><span class="glass-tag">Generative AI</span></div>
+                    <div class="p-links">
+                        <a href="https://github.com/Shahini505" target="_blank" class="btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn-sm btn-gradient-soft"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="https://github.com/Shahini505" target="_blank" class="btn btn-gradient shine">View All on GitHub</a>
+        </div>
+    </section>
+
+    <section class="certificates" id="certificates">
+        <h2 class="heading">My <span>Certificates</span></h2>
+        <div class="certificates-grid">
+            <div class="certificate-card glass hover-gradient-border float-anim">
+                <i class="fas fa-award icon-gradient text-glow-main c-icon"></i>
+                <h3>ChatGPT-4 Prompt Engineering</h3>
+                <p>Generative AI & LLM</p>
+                <div class="cert-b cyan-border"></div>
+            </div>
+            <div class="certificate-card glass hover-gradient-border float-anim delay-1">
+                <i class="fas fa-certificate icon-gradient text-glow-sec c-icon"></i>
+                <h3>Python Skill Up</h3>
+                <p>GeeksforGeeks</p>
+                <div class="cert-b purple-border"></div>
+            </div>
+            <div class="certificate-card glass hover-gradient-border float-anim delay-2">
+                <i class="fas fa-cloud icon-gradient text-glow-ter c-icon"></i>
+                <h3>Cloud Computing</h3>
+                <p>NPTEL (IIT Kharagpur)</p>
+                <div class="cert-b teal-border"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        
+        <div class="contact-container">
+            <!-- Left Side: Contact Cards & Socials -->
+            <div class="contact-info">
+                <div class="contact-info-card glass hover-gradient-border">
+                    <div class="icon-ring"><i class="fas fa-envelope icon-gradient"></i></div>
+                    <div>
+                        <h3>Email</h3>
+                        <a href="mailto:shahinibandaru05@gmail.com">shahinibandaru05@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-info-card glass hover-gradient-border">
+                    <div class="icon-ring"><i class="fas fa-phone icon-gradient"></i></div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 8096200970</p>
+                    </div>
+                </div>
+                <div class="contact-info-card glass hover-gradient-border">
+                    <div class="icon-ring"><i class="fas fa-location-dot icon-gradient"></i></div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Andhra Pradesh, India</p>
+                    </div>
+                </div>
+
+                <!-- Contact Socials -->
+                <div class="contact-socials mt-3">
+                    <a href="https://github.com/Shahini505" target="_blank" class="social-btn glass hover-gradient-border">
+                        <i class="fab fa-github"></i> <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/shahini-bandaru" target="_blank" class="social-btn glass hover-gradient-border">
+                        <i class="fab fa-linkedin-in"></i> <span>LinkedIn</span>
+                    </a>
+                    <a href="Doc1.pdf" download class="social-btn glass hover-gradient-border">
+                        <i class="fas fa-file-pdf"></i> <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <form action="#" class="contact-form glass float-anim" id="contact-form" novalidate>
+                <div class="input-row">
+                    <div class="input-wrap">
+                        <input type="text" id="name" name="name" placeholder="Name" autocomplete="off" spellcheck="false" required>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" spellcheck="false" required>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <input type="tel" id="mobile" name="mobile" placeholder="Phone" autocomplete="off" spellcheck="false">
+                    <span class="focus-border"></span>
+                </div>
+                <div class="input-wrap">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" autocomplete="off" spellcheck="false" required>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="input-wrap">
+                    <textarea id="message" name="message" placeholder="Message" autocomplete="off" spellcheck="false" required></textarea>
+                    <span class="focus-border"></span>
+                </div>
+                
+                <div id="form-message" class="form-status-msg"></div>
+
+                <button type="submit" class="btn btn-gradient w-100" id="submit-btn" style="margin-top: 1.5rem;">
+                    Send Message <i class="fas fa-paper-plane" style="margin-left: 1rem;"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- AI Assistant Widget -->
+    <div class="ai-assistant">
+        <div class="ai-chat-window glass" id="ai-chat-window">
+            <div class="ai-header bg-gradient">
+                <div class="ai-profile">
+                    <i class="fas fa-robot"></i>
+                    <span>Shahini AI Bot</span>
+                </div>
+                <button id="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="ai-body" id="ai-body">
+                <div class="ai-message bot">
+                    Hi! I'm Shahini's AI assistant. You can ask me about her skills, projects, education, or how to contact her!
+                </div>
+            </div>
+            <div class="ai-input">
+                <input type="text" id="ai-input" placeholder="Type a message..." autocomplete="off">
+                <button id="ai-send" class="btn-gradient"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="ai-trigger btn-gradient shine" id="ai-trigger">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <footer class="footer z-index-1 relative glass-footer">
+        <div class="footer-text"><p>Copyright &copy; 2026 Shahini Bandaru | Built with <i class="fas fa-heart" style="color:var(--main-color)"></i></p></div>
+        <div class="footer-iconTop"><a href="#home" class="btn-gradient float-anim"><i class="fas fa-arrow-up"></i></a></div>
+    </footer>
+
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Use EmailJS SDK v4 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
