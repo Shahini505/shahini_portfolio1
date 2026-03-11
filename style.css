@@ -523,6 +523,11 @@ section {
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
   transform: translateX(-100%); animation: shimmer 2s infinite;
 }
+.tags-container, .tech-stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
 .glass-tag, .skill-tag {
   font-size: 1.3rem; padding: 0.5rem 1.5rem; background: rgba(128,128,128,0.05);
   border: 1px solid var(--glass-border); border-radius: 20px; color: var(--text-color); transition: 0.3s;
