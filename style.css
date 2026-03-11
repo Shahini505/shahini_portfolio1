@@ -9,23 +9,23 @@
 
 :root {
   /* --- Default Dark Mode --- */
-  --bg-color: #07090e;
-  --second-bg-color: #0d121c;
-  --text-color: #e2e8f0;
+  --bg-color: #0b0f19;
+  --second-bg-color: #0b0f19;
+  --text-color: #ffffff;
   --heading-color: #ffffff;
   
   /* Brand Colors */
-  --main-color: #00f0ff;
-  --secondary-color: #8a2be2;
-  --tertiary-color: #00e5ff;
+  --main-color: #3b82f6;
+  --secondary-color: #6366f1;
+  --tertiary-color: #3b82f6;
   
   /* Gradients */
-  --glow-gradient: linear-gradient(135deg, var(--main-color), var(--secondary-color), var(--tertiary-color));
+  --glow-gradient: var(--main-color);
   
   /* Glassmorphism Settings */
-  --glass-bg: rgba(17, 24, 39, 0.4);
+  --glass-bg: #111827;
   --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-shadow: 0 8px 32px 0 rgba(0,0,0,0.4);
+  --glass-shadow: 0 4px 15px rgba(0,0,0,0.2);
   
   /* Component-Specific */
   --terminal-bg: rgba(10, 15, 25, 0.85);
@@ -107,11 +107,9 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1px;
 }
 
-/* Gradient Text Mask */
+/* Solid Accent Text */
 .heading span {
-  background: var(--glow-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--main-color);
 }
 
 /* --- Global Utilities --- */
@@ -178,13 +176,21 @@ section {
   top: 0; left: 0; width: 100%;
   padding: 2rem 9%;
   background: var(--glass-bg);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 999;
   transition: 0.5s;
+}
+
+.header.sticky {
+  padding: 1.5rem 9%;
+  background: var(--glass-bg);
+  box-shadow: var(--glass-shadow);
 }
 
 .logo {
@@ -379,40 +385,17 @@ section {
   text-align: center;
 }
 
-/* Gradient Button Base */
+/* Solid Button Base */
 .btn-gradient {
-  background: var(--glow-gradient);
-  background-size: 200% auto;
-  color: #fff;
-  box-shadow: 0 0 20px rgba(138,43,226,0.3);
+  background: var(--main-color);
+  color: #ffffff;
   border: none;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Button Ripple Core CSS */
-.btn-gradient::after {
-  content: "";
-  display: block; position: absolute;
-  width: 100%; height: 100%;
-  top: 0; left: 0; pointer-events: none;
-  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  transform: scale(10,10);
-  opacity: 0;
-  transition: transform .5s, opacity 1s;
-}
-
-.btn-gradient:active::after {
-  transform: scale(0,0);
-  opacity: .3;
-  transition: 0s;
+  transition: 0.3s ease;
 }
 
 .btn-gradient:hover {
-  background-position: right center;
-  box-shadow: 0 0 30px rgba(0,240,255,0.5);
+  background: var(--secondary-color);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
   transform: translateY(-3px);
 }
 
@@ -435,11 +418,10 @@ section {
 .home-content h3:nth-of-type(2) { margin-bottom: 2rem; }
 .home-content h1 {
   font-size: 6.5rem; font-weight: 800; line-height: 1.1; margin: 1rem 0;
-  background: var(--glow-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.4));
+  color: var(--heading-color);
 }
 .home-content p { font-size: 1.8rem; line-height: 1.7; margin: 2rem 0 4rem; color: var(--text-color); font-weight: 400; opacity: 0.8; }
-.multiple-text { color: var(--main-color); text-shadow: 0 0 20px rgba(0,240,255,0.5); font-weight: 700; }
+.multiple-text { color: var(--main-color); font-weight: 700; }
 
 .social-media { margin-bottom: 4rem; display: flex; gap: 1.5rem; }
 .social-media a {
@@ -450,8 +432,8 @@ section {
   transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275); cursor: none;
 }
 .social-media a:hover {
-  background: var(--glow-gradient); color:#fff; border-color:transparent;
-  transform: translateY(-5px) scale(1.1); box-shadow: 0 10px 20px rgba(138,43,226,0.3);
+  background: var(--main-color); color:#ffffff; border-color:transparent;
+  transform: translateY(-5px) scale(1.1); box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
 }
 
 /* --- Profile Glow Rings --- */
@@ -470,7 +452,7 @@ section {
 .about-card, .certificate-card, .contact-info-card { padding: 4rem 3rem; text-align: center; }
 .about-card h3, .certificate-card h3 { font-size: 2.4rem; margin-bottom: 1.5rem; color: var(--heading-color); font-weight: 600; }
 .about-card p, .certificate-card p { font-size: 1.6rem; color: var(--text-color); line-height: 1.7; opacity: 0.8; }
-.p-icon, .c-icon { font-size: 4.5rem; margin-bottom: 2.5rem; display: inline-block; background: var(--glow-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.p-icon, .c-icon { font-size: 4.5rem; margin-bottom: 2.5rem; display: inline-block; color: var(--main-color); }
 
 /* --- Contact Section Specifics --- */
 .contact-info-card { display: flex; align-items: center; gap: 2.5rem; text-align: left; padding: 3rem 2.5rem; margin-bottom: 2rem;}
